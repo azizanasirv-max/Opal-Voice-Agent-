@@ -10,7 +10,8 @@ This repository represents the **initial non-sensitive foundation**:
 - Includes placeholder diagnostics and settings panels; no frontend API keys are used.
 
 **Current status:** this is a UI foundation. `VoiceServiceMock` simulates session state and text
-replies. It does not connect to Deepslate, capture microphone audio, or play audio.
+replies. It does not connect to Deepslate, capture microphone audio, or play audio. Stage 0 and
+Stage 1B findings are in `docs/`; **no live Deepslate session has been run yet**.
 
 ---
 
@@ -35,7 +36,8 @@ replies. It does not connect to Deepslate, capture microphone audio, or play aud
 ├── tsconfig.test.json            # Test-only compilation configuration
 ├── vite.config.ts                # Vite bundler configuration
 ├── docs/
-│   └── stage-0-audit.md          # Repository audit and implementation roadmap
+│   ├── stage-0-audit.md          # Repository audit and implementation roadmap
+│   └── stage-1b-protocol-proof.md # Deepslate protocol findings and blocked live checks
 ├── tests/
 │   └── voice-service.test.ts     # Mock service contract tests
 └── src/
