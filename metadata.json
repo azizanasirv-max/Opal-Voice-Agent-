@@ -1,0 +1,6 @@
+{
+  "name": "Opal Voice",
+  "description": "Mobile-friendly real-time voice assistant foundation for Deepslate Opal integration",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": []
+}
