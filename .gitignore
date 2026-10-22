@@ -1,6 +1,34 @@
-node_modules
-dist
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+dist-ssr/
+.test-dist/
+.vite/
+*.tsbuildinfo
+
+# Local environment and secrets
 .env
+.env.*
+!.env.example
+.dev.vars
+.dev.vars.*
+.wrangler/
+
+# Test and coverage output
+coverage/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor and OS files
 .DS_Store
-.vite
+Thumbs.db
+.idea/
+.vscode/
 *.local

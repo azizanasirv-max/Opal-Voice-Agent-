@@ -9,7 +9,7 @@ import {
 
 /**
  * Placeholder implementation of VoiceService for the Opal Voice foundation stage.
- * Awaiting Cline implementation of the actual Deepslate WebSocket protocol and audio engine.
+ * Awaiting implementation of the actual Deepslate WebSocket protocol and audio engine.
  */
 export class VoiceServiceMock implements VoiceService {
   private connectionStatus: ConnectionStatus = 'disconnected';
@@ -40,7 +40,7 @@ export class VoiceServiceMock implements VoiceService {
     this.startDiagnosticsTimer();
 
     this.addSystemMessage(
-      'Connected to Opal Voice Foundation. Awaiting Deepslate real-time voice protocol implementation by Cline.'
+      'Connected to Opal Voice Foundation. Awaiting Deepslate real-time voice protocol implementation.'
     );
   }
 

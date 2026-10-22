@@ -46,7 +46,7 @@ export const ConversationArea: React.FC<ConversationAreaProps> = ({
             <h2 className="text-xl font-semibold text-[#FAFAF9] mb-2">Welcome to Opal Voice</h2>
             <p className="text-sm text-[#A8A29E] mb-6">
               {isConnected
-                ? 'Session active. Start speaking or send a test message below.'
+                ? 'Session active (foundation preview). Send a test message below.'
                 : 'Tap "Start Session" in the header to initialize the real-time voice foundation.'}
             </p>
             <div className="grid grid-cols-1 gap-2 w-full text-left">

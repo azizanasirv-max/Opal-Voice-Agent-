@@ -32,39 +32,40 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ isOpen, onClose })
           <div className="p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-start gap-3">
             <Lock className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" />
             <div className="space-y-1">
-              <h3 className="text-xs font-semibold text-emerald-300 uppercase tracking-wider">Secure Architecture</h3>
+              <h3 className="text-xs font-semibold text-emerald-300 uppercase tracking-wider">Credential Boundary</h3>
               <p className="text-xs text-[#FAFAF9]/90">
-                The frontend never stores or handles Deepslate API credentials. All authentication and WebSocket relaying are routed securely through the server-side architecture.
+                The frontend does not store or handle Deepslate API credentials. A server-side relay
+                will be required to authenticate with Deepslate; it is not implemented in this build.
               </p>
             </div>
           </div>
 
           {/* Configuration Placeholders */}
           <div className="space-y-4">
-            <h3 className="text-xs font-semibold text-[#FAFAF9] uppercase tracking-wider">Audio & Protocol Configuration (Placeholders)</h3>
+            <h3 className="text-xs font-semibold text-[#FAFAF9] uppercase tracking-wider">Audio & Protocol Configuration (Not Implemented)</h3>
             
             <div className="space-y-2">
-              <label className="text-xs text-[#A8A29E] block">Audio Sample Rate</label>
+              <label className="text-xs text-[#A8A29E] block">Audio Sample Rate (planned)</label>
               <select
                 disabled
                 className="w-full bg-[#0C0A09] border border-stone-800 rounded-xl px-3 py-2 text-stone-400 opacity-60 cursor-not-allowed"
               >
-                <option>24 kHz PCM (Deepslate Standard)</option>
+                <option>Not configured — protocol integration pending</option>
               </select>
             </div>
 
             <div className="space-y-2">
-              <label className="text-xs text-[#A8A29E] block">WebSocket Relay Endpoint</label>
+              <label className="text-xs text-[#A8A29E] block">WebSocket Relay Endpoint (not configured)</label>
               <input
                 type="text"
                 disabled
-                value="wss://api.deepslate.opal.relay (Configured server-side)"
+                value="Not implemented"
                 className="w-full bg-[#0C0A09] border border-stone-800 rounded-xl px-3 py-2 text-stone-400 opacity-60 cursor-not-allowed text-xs"
               />
             </div>
 
             <div className="space-y-2">
-              <label className="text-xs text-[#A8A29E] block">Voice Activity Detection (VAD) Sensitivity</label>
+              <label className="text-xs text-[#A8A29E] block">Voice Activity Detection (VAD) Sensitivity (planned)</label>
               <input
                 type="range"
                 disabled
@@ -74,7 +75,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ isOpen, onClose })
           </div>
 
           <div className="border-t border-stone-800 pt-4 text-xs text-stone-500">
-            Foundation version 1.0.0. Ready for Cline voice engine extension.
+            Foundation Stage 1A. Voice engine and server relay are not implemented.
           </div>
         </div>
 
