@@ -247,6 +247,9 @@ the documentation does not say. That internal question is **UNRESOLVED**.
 2. **TTS configured** — `ModelAudioChunk` carries synthesized audio; `ModelSpeechProgress` reports
    audible text; playback-position reporting can be used. DOCUMENTED.
 
+`output_audio_line` by itself is **not** an audio switch. The official core SDK always builds and
+sends an output audio line, but exposes audio only when `ttsConfig` is present. DOCUMENTED (SDK).
+
 ### 5.3 Actual payload status
 
 - Audio event received: **NO — no session**.
